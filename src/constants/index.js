@@ -1,11 +1,11 @@
 const navLinks = [
     {
-        name: "Experience",
-        link: "#experience",
-    },
-    {
         name: "Projects",
         link: "#projects",
+    },
+    {
+        name: "Experience",
+        link: "#experience",
     },
     {
         name: "Skills",
@@ -214,23 +214,13 @@ const expLogos = [
 
 const socialImgs = [
     {
-        name: "insta",
-        url: "https://www.instagram.com/",
-        imgPath: "/images/insta.png",
-    },
-    {
-        name: "fb",
-        url: "https://www.facebook.com/",
-        imgPath: "/images/fb.png",
-    },
-    {
-        name: "x",
-        url: "https://www.x.com/",
-        imgPath: "/images/x.png",
+        name: "github",
+        url: "https://github.com/AndrewFesenko",
+        imgPath: "/images/github.png",
     },
     {
         name: "linkedin",
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/in/andrew-fesenko-007bb3248\n",
         imgPath: "/images/linkedin.png",
     },
 ];
@@ -429,4 +419,22 @@ export const myProjects = [
             },
         ],
     },
+];
+
+export const aboutMeTopics = [
+    {
+        title: "About Me",
+        subtitle: "Hello, I'm Andrew",
+        description: "Im Andrew",
+    },
+    {
+        title: "Cool Facts",
+        subtitle: "idk",
+        description: "idk",
+    },
+    {
+        title: "Idk'",
+        subtitle: "idk something",
+        description: "idk something else",
+    }
 ];

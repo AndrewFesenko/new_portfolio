@@ -57,11 +57,11 @@ const Projects = () => {
 
 
     return (
-        <section id="projects" ref={sectionRef} className="c-space my-20 min-h-screen flex items-center">
+        <section id="projects" ref={sectionRef} className="c-space my-20 min-h-screen flex flex-col items-center">
+            <TitleHeader title="Projects" sub="🛠️ My Projects" />
+
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-                <TitleHeader
-                    title="Projects"
-                    sub="🛠️ My Projects"/>
+
                 {/* Card with spotlight as background */}
                 <div ref={descRef} className="card-border relative p-10 shadow-2xl shadow-black-200 rounded-2xl bg-[#10131a] overflow-hidden flex flex-col justify-between max-w-3xl mx-auto min-h-[28rem]">
                     {/* Spotlight as background */}

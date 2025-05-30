@@ -234,6 +234,39 @@ section {
         @apply border border-black-50 bg-black-100;
     }
 
+
+    .card-border.cool {
+        border: 1px solid #2a4259;
+        background-color: #0e141a;
+        box-shadow: 0 0 30px rgba(130, 200, 255, 0.1);
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 30px rgba(130, 200, 255, 0.1);
+    }
+
+
+    @keyframes icyPulse {
+        0% {
+            box-shadow: 0 0 10px rgba(130, 200, 255, 0.1);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(130, 200, 255, 0.25);
+        }
+        100% {
+            box-shadow: 0 0 10px rgba(130, 200, 255, 0.1);
+        }
+    }
+
+    .pulse-card {
+        border: 1px solid rgba(130, 200, 255, 0.2);
+        animation: icyPulse 4s ease-in-out infinite;
+    }
+
+
     .marquee-item {
         @apply md:w-40 w-32;
     }
@@ -298,7 +331,7 @@ section {
     }
 
     .footer {
-        @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+        @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex flex-col items-center justify-center gap-8;
 
         .footer-container {
             @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
@@ -321,6 +354,38 @@ section {
         }
     }
 }
+
+@layer components {
+    .icy-footer {
+        @apply pt-10 mt-10;
+    }
+
+    .footer-link {
+        @apply text-white-50 hover:text-white transition duration-300 text-sm;
+    }
+
+    .icy-icons .icon {
+        border: 1px solid rgba(130, 200, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.02);
+        box-shadow: 0 0 10px rgba(130, 200, 255, 0.05);
+        @apply rounded-xl size-10 md:size-12 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white-50;
+    }
+
+    .footer-divider {
+        @apply w-full h-1 mt-10 rounded-full;
+        background: linear-gradient(
+                90deg,
+                rgba(130, 200, 255, 0) 0%,
+                rgba(130, 200, 255, 0.25) 25%,
+                rgba(130, 200, 255, 0.4) 50%,
+                rgba(130, 200, 255, 0.25) 75%,
+                rgba(130, 200, 255, 0) 100%
+        );
+        animation: icyPulse 6s ease-in-out infinite;
+    }
+}
+
+
 
 /* Hero text slider starts */
 .slide {
