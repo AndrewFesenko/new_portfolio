@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TitleHeader from "../components/TitleHeader.jsx";
 import { aboutMeTopics } from "../constants";
 
+import PhotoCarousel from "../components/PhotoCarousel";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -60,6 +62,9 @@ const About = () => {
                     >
                         <div className="glow absolute inset-0 z-0 pointer-events-none" />
                         <div className="relative z-10 flex flex-col gap-5">
+                            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+                            {/* Tab Buttons */}
                             <div className="flex gap-2 flex-wrap">
                                 {aboutMeTopics.map((topic, index) => (
                                     <button
@@ -76,12 +81,27 @@ const About = () => {
                                 ))}
                             </div>
 
-                            <h3 className="text-white text-2xl font-semibold mt-2">
+                                {/* Resume Button */}
+                            <a
+                                href="/Andrew_Fesenko_Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm px-4 py-1.5 rounded border border-white-30 text-white bg-white-10 hover:bg-white-20 transition duration-300"
+                            >
+                                Resume
+                            </a>
+                        </div>
+
+                        <h3 className="text-white text-2xl font-semibold mt-2">
                                 {current.subtitle}
                             </h3>
-                            <p className="text-white-50 text-lg leading-relaxed break-words whitespace-pre-wrap">
-                                {current.description}
-                            </p>
+                            {current.images ? (
+                                <PhotoCarousel images={current.images} />
+                            ) : (
+                                <p className="text-white-50 text-lg leading-relaxed break-words whitespace-pre-wrap">
+                                    {current.description}
+                                </p>
+                            )}
                         </div>
                     </div>
                 </div>

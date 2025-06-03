@@ -22,17 +22,19 @@ const words = [
     { text: "Concepts", imgPath: "/images/concepts.svg" },
     { text: "Designs", imgPath: "/images/designs.svg" },
     { text: "Code", imgPath: "/images/code.svg" },
+    { text: "Systems", imgPath: "/images/hardware.svg" },
     { text: "Ideas", imgPath: "/images/ideas.svg" },
     { text: "Concepts", imgPath: "/images/concepts.svg" },
     { text: "Designs", imgPath: "/images/designs.svg" },
     { text: "Code", imgPath: "/images/code.svg" },
+    { text: "Systems", imgPath: "/images/hardware.svg" }
 ];
 
 const counterItems = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 5, suffix: "+", label: "Personal Projects" },
+    { value: 2, suffix: "+", label: "Hackathons Participated" },
+    { value: 9, suffix: "+", label: "Technical Courses Completed" },
+    { value: 1, suffix: "%", label: "Internship Experiences" },
 ];
 
 const logoIconsList = [
@@ -74,20 +76,21 @@ const logoIconsList = [
 const abilities = [
     {
         imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Delivering high-quality results while maintaining attention to every detail.",
+        title: "Build → Break → Learn",
+        desc: "Most of what I’ve learned came from trying, breaking things, and figuring out why they didn’t work. It sticks better that way.",
     },
     {
         imgPath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Keeping you updated at every step to ensure transparency and clarity.",
+        title: "Communication Matters",
+        desc: "Clear, honest communication makes everything smoother. I always want the people I work with to know where things stand.",
     },
     {
         imgPath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+        title: "Questions, Always",
+        desc: "I ask a lot of questions. Not to be annoying, it’s just how I learn and how I build better things.",
     },
 ];
+
 
 const techStackImgs = [
     {
@@ -114,25 +117,25 @@ const techStackImgs = [
 
 const techStackIcons = [
     {
-        name: "React Developer",
+        name: "React & Frontend",
         modelPath: "/models/react_logo-transformed.glb",
         scale: 1,
         rotation: [0, 0, 0],
     },
     {
-        name: "Python Developer",
+        name: "Python Projects",
         modelPath: "/models/python-transformed.glb",
         scale: 0.8,
         rotation: [0, 0, 0],
     },
     {
-        name: "Backend Developer",
+        name: "Backend",
         modelPath: "/models/node-transformed.glb",
         scale: 5,
         rotation: [0, -Math.PI / 2, 0],
     },
     {
-        name: "Interactive Developer",
+        name: "Interactive Development",
         modelPath: "/models/three.js-transformed.glb",
         scale: 0.05,
         rotation: [0, 0, 0],
@@ -148,53 +151,70 @@ const techStackIcons = [
 const expCards = [
     {
         tools: [
-            { name: "React", icon: "/images/tools/react.png" },
-            { name: "Tailwind", icon: "/images/tools/tailwind.png" },
-            { name: "TypeScript", icon: "/images/tools/typescript.png" },
+            { name: "Unity", icon: "/images/tools/unity.png" },
+            { name: "C#", icon: "/images/tools/csharp.png" },
+            { name: "Blender", icon: "/images/tools/blender.png" },
+            { name: "Python", icon: "/images/tools/python.png" },
         ],
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
-        title: "aw",
-        date: "January 2023 - Present",
+        imgPath: "/images/glade_lab.png",
+        logoPath: "/images/glade_logo.png",
+        title: "Undergraduate Researcher — GLaDE Lab (UF)",
+        date: "Feb 2025 – Present",
         responsibilities: [
-            "wa",
-            "wa",
-            "wa",
+            "Built interactive VR simulations in Unity to teach engineering statics.",
+            "Created 3D models and physics-based problems using Blender and SolidWorks.",
+            "Programmed AI-driven problem variations in C# and Python for dynamic learning.",
+            "Researched adaptive systems and personalized feedback for education tools.",
         ],
     },
     {
         tools: [
-            { name: "React", icon: "/images/tools/react.png" },
-            { name: "Tailwind", icon: "/images/tools/tailwind.png" },
-            { name: "TypeScript", icon: "/images/tools/typescript.png" },
+            { name: "C#", icon: "/images/tools/csharp.png" },
+            { name: "JavaScript", icon: "/images/tools/javascript.png" },
+            { name: "HTML/CSS", icon: "/images/tools/html.png" },
         ],
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "aw",
-        date: "June 2020 - December 2023",
+        imgPath: "/images/pbsc_site.png",
+        logoPath: "/images/pbsc_logo.png",
+        title: "Web Development Intern — Palm Beach State College",
+        date: "June 2024 – Present",
         responsibilities: [
-            "wa",
-            "wa",
-            "wa",
+            "Built API integrations to sync JotForm data with internal databases.",
+            "Automated paper-based workflows into secure online forms.",
+            "Helped improve navigation, page, and app layouts based on student/employee feedback.",
         ],
     },
     {
         tools: [
-            { name: "React", icon: "/images/tools/react.png" },
-            { name: "Tailwind", icon: "/images/tools/tailwind.png" },
-            { name: "TypeScript", icon: "/images/tools/typescript.png" },
+            { name: "AutoCAD", icon: "/images/tools/autocad.png" },
+            { name: "Manufacturing", icon: "/images/tools/wrench.png" },
         ],
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "wa",
-        date: "March 2019 - May 2020",
+        imgPath: "/images/instatech.png",
+        logoPath: "/images/instatech_logo.png",
+        title: "Assistant — Instatech Industries",
+        date: "Oct 2021 – Aug 2023",
         responsibilities: [
-            "aw",
-            "aw",
-            "aw",
+            "Created structural hardware blueprints in AutoCAD based on engineering specs.",
+            "Maintained clean, organized work areas to support safety and efficiency.",
+            "Worked hands-on with fabrication tools in a large-scale production environment.",
+        ],
+    },
+    {
+        tools: [
+            { name: "Service", icon: "/images/tools/restaurant.png" },
+            { name: "Teamwork", icon: "/images/tools/team.png" },
+        ],
+        imgPath: "/images/lindburgers.png",
+        logoPath: "/images/lindburgers_logo.png",
+        title: "Server / Food Runner — Lindburgers",
+        date: "May 2021 – Aug 2023",
+        responsibilities: [
+            "Served customers in a fast-paced restaurant with 50+ menu items.",
+            "Managed payments, custom orders, and dietary preferences with care.",
+            "Worked closely with kitchen staff to maintain quality and flow.",
         ],
     },
 ];
+
 
 const expLogos = [
     {
@@ -424,17 +444,46 @@ export const myProjects = [
 export const aboutMeTopics = [
     {
         title: "About Me",
-        subtitle: "Hello, I'm Andrew",
-        description: "Im Andrew",
+        subtitle: "Hey, I'm Andrew Fesenko",
+        description: "I've been into computers for as long as I can remember. I built my first PC when I was a kid, and that pretty much lit the spark. I started out in a Java bootcamp, learned how to mod Minecraft, and I haven’t stopped building since.\n" +
+            "\n" +
+            "Over the past few years, I’ve worked on everything from web platforms to embedded projects and AI tools. Now I'm especially interested in systems that sit close to the hardware — digital logic, embedded design, and real-time systems.\n" +
+            "\n" +
+            "I like solving problems by building actual things, and I’m always trying to get better at connecting code with the physical world.",
+    }
+    ,
+    {
+        title: "Personal Stuff",
+        subtitle: "Outside the Code",
+        description: "- I lift every day. It’s how I reset and keep my mind in check.\n" +
+            "- I’m into gaming — mostly shooters, strategy, and story-driven stuff. Big fan of Elden Ring, Wukong, and the Batman Arkham series.\n" +
+            "- I modded my first car with my dad. We built custom headlights for my 2016 Honda Accord EX-L. The LEDs eventually died because we forgot a kill switch, but it was still worth it.\n" +
+            "- I’m Ukrainian and speak both Ukrainian and Russian.\n" +
+            "- I listen to a lot of Polyphia, Tyler, The Creator (I went to Chromokopia), and Denzel Curry.\n" +
+            "- I love LEGOs and still struggle with blowing money on them.",
     },
     {
-        title: "Cool Facts",
-        subtitle: "idk",
-        description: "idk",
+        title: "Now",
+        subtitle: "What I'm Working On",
+        description:
+            "- Building Day Zero, a mobile app that helps track habits and daily goals.\n" +
+            "- Testing IoT sensor nodes with ESP32s for a home automation idea.\n" +
+            "- Working on a new platform for UF's Gators for Refugee Medical Relief Tutoring Program.\n" +
+            "- Learning more about Docker, AWS, and CI/CD workflows.\n" +
+            "- Balancing project time with school, the gym, and everything else life throws at me.",
     },
     {
-        title: "Idk'",
-        subtitle: "idk something",
-        description: "idk something else",
+        title: "Photos",
+        subtitle: "More About Me",
+        images: [
+            { src: "/images/photos/pc_build.jpg", caption: "Built this myself. Still proud." },
+            { src: "/images/photos/circuits.jpg", caption: "My first PCB project: designed, soldered, and tested as part of UF's Circuits 1 final." },
+            { src: "/images/photos/pcb.jpg", caption: "My first self-designed PCB: built for a personal project using the ESP32." },
+            { src: "/images/photos/weld.jpg", caption: "First time welding, guided by my dad." },
+            { src: "/images/photos/dad.JPG", caption: "Me and my dad. He’s the reason I like building things." },
+            { src: "/images/photos/dog.JPG", caption: "My dog, who thinks he's my co-pilot." },
+            { src: "/images/photos/concert.jpg", caption: "My first ever concert." },
+            { src: "/images/photos/clash_base.PNG", caption: "Years of progress and no regrets." },
+        ],
     }
 ];

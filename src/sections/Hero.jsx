@@ -50,11 +50,11 @@ const Hero = () => {
                                     </span>
                                 </span>
                             </h1>
-                            <h1>into Real Projects</h1>
-                            <h1>that Deliver Results</h1>
+                            <h1>into things</h1>
+                            <h1>that actually work</h1>
                         </div>
                         <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                            Hi, I'm Andrew, a engineering based in America with a passion for hardware and code
+                            Hey, I’m Andrew. I build things with code, circuits, and curiosity.
                         </p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
