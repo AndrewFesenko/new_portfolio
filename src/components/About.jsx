@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TitleHeader from "../components/TitleHeader.jsx";
 import { aboutMeTopics } from "../constants";
-
 import PhotoCarousel from "../components/PhotoCarousel";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -54,7 +53,7 @@ const About = () => {
             </div>
 
             <div className="flex justify-center md:flex-row flex-col gap-10">
-                <div className="w-full md:w-[48%] lg:w-[45%] px-3 md:px-5">
+                <div className="w-full md:w-[60%] lg:w-[50%] px-3 md:px-5">
                     <div
                         ref={glowRef}
                         onMouseMove={handleMouseMove}
@@ -63,40 +62,46 @@ const About = () => {
                         <div className="glow absolute inset-0 z-0 pointer-events-none" />
                         <div className="relative z-10 flex flex-col gap-5">
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-
-                            {/* Tab Buttons */}
-                            <div className="flex gap-2 flex-wrap">
-                                {aboutMeTopics.map((topic, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={() => setActiveIndex(index)}
-                                        className={`text-sm px-3 py-1 rounded border transition-colors duration-300 ${
-                                            activeIndex === index
-                                                ? "bg-white-10 text-white border-white-30"
-                                                : "text-white-50 border-white-20 hover:text-white"
-                                        }`}
-                                    >
-                                        {topic.title}
-                                    </button>
-                                ))}
-                            </div>
+                                {/* Tab Buttons */}
+                                <div className="flex gap-2 flex-wrap">
+                                    {aboutMeTopics.map((topic, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => setActiveIndex(index)}
+                                            className={`text-sm px-3 py-1 rounded border transition-colors duration-300 ${
+                                                activeIndex === index
+                                                    ? "bg-white-10 text-white border-white-30"
+                                                    : "text-white-50 border-white-20 hover:text-white"
+                                            }`}
+                                        >
+                                            {topic.title}
+                                        </button>
+                                    ))}
+                                </div>
 
                                 {/* Resume Button */}
-                            <a
-                                href="/Andrew_Fesenko_Resume.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm px-4 py-1.5 rounded border border-white-30 text-white bg-white-10 hover:bg-white-20 transition duration-300"
-                            >
-                                Resume
-                            </a>
-                        </div>
+                                <a
+                                    href="/Andrew_Fesenko_Resume.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm px-4 py-1.5 rounded border border-white-30 text-white bg-white-10 hover:bg-white-20 transition duration-300"
+                                >
+                                    Resume
+                                </a>
+                            </div>
 
-                        <h3 className="text-white text-2xl font-semibold mt-2">
+                            <h3 className="text-white text-2xl font-semibold mt-2">
                                 {current.subtitle}
                             </h3>
+
                             {current.images ? (
                                 <PhotoCarousel images={current.images} />
+                            ) : Array.isArray(current.description) ? (
+                                <ul className="list-disc list-inside text-white-50 text-lg leading-loose space-y-2">
+                                    {current.description.map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
+                                </ul>
                             ) : (
                                 <p className="text-white-50 text-lg leading-relaxed break-words whitespace-pre-wrap">
                                     {current.description}

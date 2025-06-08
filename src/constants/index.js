@@ -151,13 +151,13 @@ const techStackIcons = [
 const expCards = [
     {
         tools: [
-            { name: "Unity", icon: "/images/tools/unity.png" },
-            { name: "C#", icon: "/images/tools/csharp.png" },
-            { name: "Blender", icon: "/images/tools/blender.png" },
-            { name: "Python", icon: "/images/tools/python.png" },
+            { name: "Unity", icon: "/images/unity.svg" },
+            { name: "C#", icon: "/images/csharp.png" },
+            { name: "Blender", icon: "/images/blender.png" },
+            { name: "Python", icon: "/images/python.svg" },
         ],
-        imgPath: "/images/glade_lab.png",
-        logoPath: "/images/glade_logo.png",
+        imgPath: "/images/uf_banner.png",
+        logoPath: "/images/ufcirc.png",
         title: "Undergraduate Researcher — GLaDE Lab (UF)",
         date: "Feb 2025 – Present",
         responsibilities: [
@@ -169,15 +169,18 @@ const expCards = [
     },
     {
         tools: [
-            { name: "C#", icon: "/images/tools/csharp.png" },
-            { name: "JavaScript", icon: "/images/tools/javascript.png" },
-            { name: "HTML/CSS", icon: "/images/tools/html.png" },
+            { name: "C#", icon: "/images/csharp.png" },
+            { name: "JavaScript", icon: "/images/javascript.png" },
+            { name: "SQL", icon: "/assets/sql.svg" },
+            { name: "Azure", icon: "/assets/azure.svg" },
         ],
         imgPath: "/images/pbsc_site.png",
-        logoPath: "/images/pbsc_logo.png",
+        logoPath: "/images/pbsccirc.png",
         title: "Web Development Intern — Palm Beach State College",
         date: "June 2024 – Present",
         responsibilities: [
+            "Built a secure upload portal using Box APIs.",
+            "Let users create folders and upload files without Box accounts, reducing needed licenses.",
             "Built API integrations to sync JotForm data with internal databases.",
             "Automated paper-based workflows into secure online forms.",
             "Helped improve navigation, page, and app layouts based on student/employee feedback.",
@@ -185,11 +188,12 @@ const expCards = [
     },
     {
         tools: [
-            { name: "AutoCAD", icon: "/images/tools/autocad.png" },
-            { name: "Manufacturing", icon: "/images/tools/wrench.png" },
+            { name: "AutoCAD", icon: "/assets/autocad.png" },
+            { name: "Manufacturing", icon: "/assets/machine.png" },
+            { name: "Blueprints", icon: "/assets/blueprint.png" },
         ],
         imgPath: "/images/instatech.png",
-        logoPath: "/images/instatech_logo.png",
+        logoPath: "/images/instacirc.png",
         title: "Assistant — Instatech Industries",
         date: "Oct 2021 – Aug 2023",
         responsibilities: [
@@ -200,11 +204,11 @@ const expCards = [
     },
     {
         tools: [
-            { name: "Service", icon: "/images/tools/restaurant.png" },
-            { name: "Teamwork", icon: "/images/tools/team.png" },
+            { name: "Service", icon: "/assets/customer-review.png" },
+            { name: "Teamwork", icon: "/assets/united.png" },
         ],
-        imgPath: "/images/lindburgers.png",
-        logoPath: "/images/lindburgers_logo.png",
+        imgPath: "/images/lindburgers_banner.png",
+        logoPath: "/images/lindburgers.png",
         title: "Server / Food Runner — Lindburgers",
         date: "May 2021 – Aug 2023",
         responsibilities: [
@@ -339,7 +343,7 @@ export const myProjects = [
         subdesc:
             'The system uses PID control tuned via Bluetooth, enabling dynamic calibration and fine-tuning without physical access. Real-time sensor feedback is used to drive brushless motors, maintaining stability even during external disturbances. The entire cube was designed to be 3D printed, showcasing a full-stack embedded system from hardware to firmware.',
         href: 'https://github.com/AndrewFesenko/self-balancing-cube',
-        texture: '/textures/project/project3.mp4',
+        texture: '/textures/project/coming_soon.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
             backgroundColor: '#60f5a1',
@@ -363,42 +367,23 @@ export const myProjects = [
         ],
     },
     {
-        title: 'AI Chatbot Using LLMs and React Native',
-        desc: 'An AI-powered chatbot designed for a coffee shop app, built with React Native and integrated with custom LLMs for real-time, intelligent customer interaction.',
+        title: 'AI-Powered Basketball Game Analytics',
+        desc: 'A computer vision system that analyzes basketball games using object detection, tracking, and deep learning. Built to explore how AI can extract tactical insights from real footage using YOLOv8, keypoint detection, and perspective transforms.',
         subdesc:
-            'The chatbot architecture includes agents for order-taking, product recommendations, and menu inquiries—powered by Retrieval-Augmented Generation (RAG) and hosted on RunPod. With Firebase as the backend and Pinecone as the vector DB, the app enables context-aware conversations, safe interaction filtering, and a seamless mobile UX tailored for modern service environments.',
+            'The system detects players and ball in live footage, assigns team colors using zero-shot classification, and maps real-world positions to a top-down court. Stats like ball possession, passes, and player movement are automatically tracked. Built in Python using OpenCV, NumPy, and Hugging Face APIs.',
         href: '',
-        texture: '/textures/project/project4.mp4',
-        logo: '/assets/coffee.png',
+        texture: '/textures/project/coming_soon.mp4',
+        logo: '/assets/basketball_logo.png',
         logoStyle: {
-            backgroundColor: '#fffaf2',
-            background:
-                'linear-gradient(180deg, #f0e4d7 0%, #fdfbf7 100%)',
-            border: '1px solid rgba(87, 62, 47, 0.2)',
-            boxShadow: '4px 6px 20px rgba(141, 115, 91, 0.3)'
+            backgroundColor: '#0e1a1f',
+            border: '1px solid #1e2b31',
+            boxShadow: '0 0 30px rgba(255, 144, 56, 0.25)'
         },
         spotlight: '/assets/spotlight4.png',
         tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'FireBase',
-                path: 'assets/firebase.png',
-            },
-            {
-                id: 3,
-                name: 'HuggingFace',
-                path: '/assets/huggingface.png',
-            },
-            {
-                id: 4,
-                name: 'Run Pod',
-                path: '/assets/runpod.svg',
-            },
+            { id: 1, name: 'Python', path: '/assets/python.svg' },
+            { id: 2, name: 'OpenCV', path: '/assets/OpenCV.svg' },
+            { id: 3, name: 'Hugging Face', path: '/assets/huggingface.png' }
         ],
     },
     {
@@ -407,7 +392,7 @@ export const myProjects = [
         subdesc:
             'By integrating dynamic models and parametric solutions, students can adjust problem variables and immediately see how forces, reactions, and internal stresses change—making abstract concepts tangible and interactive.',
         href: '',
-        texture: '/textures/project/vrproject.mp4',
+        texture: '/textures/project/coming_soon.mp4',
         logo: '/assets/UF.png',
         logoStyle: {
             backgroundColor: '#1C1C21',
@@ -455,22 +440,25 @@ export const aboutMeTopics = [
     {
         title: "Personal Stuff",
         subtitle: "Outside the Code",
-        description: "- I lift every day. It’s how I reset and keep my mind in check.\n" +
-            "- I’m into gaming — mostly shooters, strategy, and story-driven stuff. Big fan of Elden Ring, Wukong, and the Batman Arkham series.\n" +
-            "- I modded my first car with my dad. We built custom headlights for my 2016 Honda Accord EX-L. The LEDs eventually died because we forgot a kill switch, but it was still worth it.\n" +
-            "- I’m Ukrainian and speak both Ukrainian and Russian.\n" +
-            "- I listen to a lot of Polyphia, Tyler, The Creator (I went to Chromokopia), and Denzel Curry.\n" +
-            "- I love LEGOs and still struggle with blowing money on them.",
+        description: [
+            "I lift every day. It’s how I reset and keep my mind in check.",
+            "I’m into gaming — mostly shooters, strategy, and story-driven stuff. Big fan of Elden Ring, Wukong, and the Batman Arkham series.",
+            "I modded my first car with my dad. We built custom headlights for my 2016 Honda Accord EX-L. The LEDs eventually died because we forgot a kill switch, but it was still worth it.",
+            "I’m Ukrainian and speak both Ukrainian and Russian.",
+            "I listen to a lot of Polyphia, Tyler, The Creator (I went to Chromokopia), and Denzel Curry.",
+            "I love LEGOs and still struggle with blowing money on them."
+        ],
     },
     {
         title: "Now",
         subtitle: "What I'm Working On",
-        description:
-            "- Building Day Zero, a mobile app that helps track habits and daily goals.\n" +
-            "- Testing IoT sensor nodes with ESP32s for a home automation idea.\n" +
-            "- Working on a new platform for UF's Gators for Refugee Medical Relief Tutoring Program.\n" +
-            "- Learning more about Docker, AWS, and CI/CD workflows.\n" +
-            "- Balancing project time with school, the gym, and everything else life throws at me.",
+        description: [
+            "Building Day Zero, a mobile app that helps track habits and daily goals.",
+            "Testing IoT sensor nodes with ESP32s for a home automation idea.",
+            "Working on a new platform for UF's Gators for Refugee Medical Relief Tutoring Program.",
+            "Learning more about Docker, AWS, and CI/CD workflows.",
+            "Balancing project time with school, the gym, and everything else life throws at me."
+        ]
     },
     {
         title: "Photos",
@@ -479,9 +467,9 @@ export const aboutMeTopics = [
             { src: "/images/photos/pc_build.jpg", caption: "Built this myself. Still proud." },
             { src: "/images/photos/circuits.jpg", caption: "My first PCB project: designed, soldered, and tested as part of UF's Circuits 1 final." },
             { src: "/images/photos/pcb.jpg", caption: "My first self-designed PCB: built for a personal project using the ESP32." },
-            { src: "/images/photos/weld.jpg", caption: "First time welding, guided by my dad." },
+            { src: "/images/photos/weld.JPG", caption: "Welded for the first time nearly seven years ago with my dad." },
             { src: "/images/photos/dad.JPG", caption: "Me and my dad. He’s the reason I like building things." },
-            { src: "/images/photos/dog.JPG", caption: "My dog, who thinks he's my co-pilot." },
+            { src: "/images/photos/dog.JPG", caption: "Project supervisor."},
             { src: "/images/photos/concert.jpg", caption: "My first ever concert." },
             { src: "/images/photos/clash_base.PNG", caption: "Years of progress and no regrets." },
         ],

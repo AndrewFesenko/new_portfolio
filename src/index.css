@@ -401,30 +401,17 @@ section {
 }
 
 @keyframes wordSlider {
-    0% {
-        transform: translateY(0.5%);
-    }
-    12.5% {
-        transform: translateY(-12.5%);
-    }
-    25% {
-        transform: translateY(-25%);
-    }
-    37.5% {
-        transform: translateY(-37.5%);
-    }
-    50% {
-        transform: translateY(-50%);
-    }
-    62.5% {
-        transform: translateY(-62.5%);
-    }
-    75% {
-        transform: translateY(-75%);
-    }
-    87.5% {
-        transform: translateY(-87.5%);
-    }
+    0%   { transform: translateY(0%); }
+    10%  { transform: translateY(-10%); }
+    20%  { transform: translateY(-20%); }
+    30%  { transform: translateY(-30%); }
+    40%  { transform: translateY(-40%); }
+    50%  { transform: translateY(-50%); }
+    60%  { transform: translateY(-60%); }
+    70%  { transform: translateY(-70%); }
+    80%  { transform: translateY(-80%); }
+    90%  { transform: translateY(-90%); }
+    95.5% { transform: translateY(-95.5%); }
 }
 
 /* Hero Text slider ends */
@@ -435,9 +422,9 @@ section {
             0deg,
             rgba(69, 222, 196, 0) 0%,
             #62e0ff 25%,
-            #52aeff 37.51%,
-            #fd5c79 62.83%,
-            #6d45ce 92.91%
+            #4aafee 37.51%,
+            #00ab84 62.83%,
+            #334ab0 92.91%
     );
 }
 
@@ -535,3 +522,4 @@ section {
 .card:hover::before {
     opacity: 1;
 }
+
