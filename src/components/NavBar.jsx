@@ -5,8 +5,8 @@ import {useState, useEffect, useRef} from "react";
 const navLinks = [
     { link: "#about", name: "About" },
     { link: "#projects", name: "Projects" },
-    { link: "#services", name: "Services" },
-    { link: "#testimonials", name: "Testimonials" },
+    { link: "#experience", name: "Experience" },
+    // { link: "#testimonials", name: "Testimonials" },
 ];
 
 const NavBar = () => {
