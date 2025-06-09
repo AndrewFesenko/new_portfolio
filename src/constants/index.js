@@ -424,6 +424,44 @@ export const myProjects = [
             },
         ],
     },
+    {
+        id: 6,
+        title: 'GRMR UF Tutoring Platform',
+        desc: 'A tutoring and academic support platform built for Gators for Refugee Medical Relief (GRMR), a nonprofit supporting K–12 and adult learners in refugee and underserved communities. Designed with Next.js, TypeScript, and Tailwind CSS to deliver accessible, culturally responsive educational tools.',
+        subdesc:
+            'Includes custom tutor and student sign-up flows, subject-based lesson browsing, and detailed descriptions of tutoring services and academic resources. The backend will be built with Node.js to support features like session management, TutorCruncher API integration, and transportation coordination for in-person events.',
+        href: '',
+        texture: '/textures/project/coming_soon.mp4',
+        logo: '/assets/GRMR.png',
+        logoStyle: {
+            backgroundColor: '#f5f3ff',
+            border: '1px solid #dcd5fa',
+            boxShadow: '0 0 30px rgba(118, 103, 184, 0.25)',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Next.js',
+                path: '/assets/nextjs.svg',
+            },
+            {
+                id: 2,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+            {
+                id: 3,
+                name: 'Tailwind CSS',
+                path: '/assets/tailwindcss.png',
+            },
+            {
+                id: 4,
+                name: 'Node.js',
+                path: '/assets/nodejs.svg',
+            },
+        ],
+    }
 ];
 
 export const aboutMeTopics = [
