@@ -118,7 +118,7 @@ const techStackImgs = [
 const techStackIcons = [
     {
         name: "React & Frontend",
-        modelPath: "/models/react_logo-transformed-v2.glb",
+        modelPath: "/models/react_logo-fixed.glb",
         scale: 1,
         rotation: [0, 0, 0],
     },
